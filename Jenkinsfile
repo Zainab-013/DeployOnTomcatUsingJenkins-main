@@ -1,10 +1,11 @@
 pipeline {
     agent any
 
-    tools {
-        jdk 'JAVA_HOME'
-        maven 'MAVEN_HOME'
-    }
+   tools {
+    jdk 'JDK21'
+    maven 'Maven3'
+}
+
 
     environment {
         WAR_FILE = 'target\\roshambo.war'
